@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  event_id: 1
+  user_id: 1
+  date: 2011-11-25 01:01:01
+  flag: false
+
+two:
+  event_id: 1
+  user_id: 1
+  date: 2011-11-25 01:01:01
+  flag: false

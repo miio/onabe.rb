@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Event:</b>
+  <%= @assert.event_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @assert.user_id %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @assert.date %>
+</p>
+
+<p>
+  <b>Flag:</b>
+  <%= @assert.flag %>
+</p>
+
+
+<%= link_to 'Edit', edit_assert_path(@assert) %> |
+<%= link_to 'Back', asserts_path %>

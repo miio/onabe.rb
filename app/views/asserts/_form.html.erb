@@ -1,0 +1,33 @@
+<%= form_for(@assert) do |f| %>
+  <% if @assert.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@assert.errors.count, "error") %> prohibited this assert from being saved:</h2>
+
+      <ul>
+      <% @assert.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :event_id %><br />
+    <%= f.number_field :event_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :flag %><br />
+    <%= f.check_box :flag %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

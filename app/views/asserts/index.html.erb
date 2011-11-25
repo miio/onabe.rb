@@ -13,8 +13,8 @@
 
 <% @asserts.each do |assert| %>
   <tr>
-    <td><%= assert.event_id %></td>
-    <td><%= assert.user_id %></td>
+    <td><%= assert.event.title %></td>
+    <td><%= assert.user.email %></td>
     <td><%= assert.date %></td>
     <td><%= assert.flag %></td>
     <td><%= link_to 'Show', assert %></td>

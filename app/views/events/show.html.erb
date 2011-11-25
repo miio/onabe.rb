@@ -29,7 +29,13 @@
   <b>End at:</b>
   <%= @event.end_at %>
 </p>
-
-
+<h3>ただ今の参加表明</h3>
+<% @asserts.each do |assert| %>
+    <p>
+    <%= assert.user.email %>
+    <%= assert.date %>
+    <%= assert.flag %>
+    </p>
+<% end %>
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
